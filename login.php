@@ -71,7 +71,7 @@
 
 		<!-- LEFT SIDE: income plus CBO finance Logo -->
 		<div class="content_left" style="width:50%; padding-right:5em; text-align:right;">
-			<img src="ico/mangoo_l.png" style="width:75%;">
+			<img src="ico/mangoo_l.png" style="width:50%;height: 30%;">
 		</div>
 
 		<!-- RIGHT SIDE: Login Form -->

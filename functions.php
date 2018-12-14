@@ -311,7 +311,7 @@
 		echo '
 		<!-- MENU HEADER -->
 		<div id="menu_header">
-			<img src="ico/mangoo_logo_m.png" style="margin: 1em 0 0 .75em;"/>
+			<img src="ico/mangoo_logo_m.png" style="margin: 1em 0 0 .75em;width:5%;height: 3%;"/>
 			<div id="menu_logout">
 				<ul>
 					<li>'.$_SESSION['log_user'].'
