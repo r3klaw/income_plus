@@ -86,7 +86,7 @@
 	$query_cust = getCustOther($db_link);
 
 	$guarantors = array();
-	if ($_SESSION['set_maxguar'] == ""){
+	if ($_SESSION['set_maxguar'] == "1"){
 		while ($row_cust = mysqli_fetch_assoc($query_cust)){
 			if ($row_cust['cust_active'] == 1) $guarantors[] = $row_cust;
 		}
@@ -159,7 +159,7 @@
 				fail += validateInterest(form.loan_interest.value)
 				fail += validatePurpose(form.loan_purpose.value)
 				fail += validateSecurity(form.loan_sec1.value)
-				fail += validateGuarantors(form.loan_guarant1.value, form.loan_guarant2.value, form.loan_guarant3.value)
+				fail += validateGuarantors(form.loan_guarant1.value)
 				fail += validateDate(form.loan_date.value)
 				fail += validateReceipt(form.loan_appfee_receipt.value)
 				if (fail == "") return true

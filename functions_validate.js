@@ -105,12 +105,12 @@ function validateSecurity(field) {
 	return ""
 }
 
-function validateGuarantors(field1, field2, field3) {
+function validateGuarantors(field1) {
 	returnstring = ""
 	if (field1 == "") returnstring = "Please choose first Guarantor.\n\n"
-	if (field2 == "") returnstring += "Please choose second Guarantor.\n\n"
-	if (field3 == "") returnstring += "Please choose third Guarantor.\n\n"
-	else if (field1 == field2 || field1 == field3 || field2 == field3) returnstring += "Guarantors must be three distinct customers.\n\n"
+// 	// if (field2 == "") returnstring += "Please choose second Guarantor.\n\n"
+// 	// if (field3 == "") returnstring += "Please choose third Guarantor.\n\n"
+// 	// else if (field1 == field2 || field1 == field3 || field2 == field3) returnstring += "Guarantors must be three distinct customers.\n\n"
 	return returnstring
 }
 
