@@ -363,7 +363,7 @@
 						<td>Principal applied:</td>
 						<td><input type="text" name="loan_principal" disabled="disabled" value="<?PHP echo number_format($result_loan['loan_principal']).' '.$_SESSION['set_cur'] ?>" /></td>
 						<td>Interest Rate:</td>
-						<td><input type="text" name="loan_interest" disabled="disabled" value="<?PHP echo $result_loan['loan_interest'].'% per month'?>" /></td>
+						<td><input type="text" name="loan_interest" disabled="disabled" value="<?PHP echo $result_loan['loan_interest'].'% per week'?>" /></td>
 					</tr>
 					<tr>
 						<td>Period:</td>

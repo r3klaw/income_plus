@@ -40,7 +40,12 @@
 
 		//Calculate expected total interest, monthly rates, and fees
 		$loan_principaldue = round($loan_principal / $loan_period, -3);
-		$loan_interesttotal = ceil((($loan_principal / 100 * $loan_interest) * $loan_period)/50)*50;
+		/** From simple interest formula P * (R/100) *T
+		 * T is always in years
+		 * One week = 0.0192 year
+		 * hence T will only affect @var $loan_interesttotal.
+		 * */
+		$loan_interesttotal = ceil((($loan_principal / 100 * $loan_interest) * ($loan_period * 0.0192)));
 		$loan_interestdue = round($loan_principal / 100 * $loan_interest);
 		$loan_repaytotal = $loan_principal + $loan_interesttotal;
 		$loan_rate = $loan_principaldue + $loan_interestdue;
