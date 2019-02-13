@@ -384,7 +384,7 @@
 					</tr>
 					<!--
 					<tr>
-						<td>Monthly Rate:</td>
+						<td>Weekly Rate:</td>
 						<td><input type="text" name="loan_rate" disabled="disabled" value="<?PHP //echo number_format($result_loan['loan_rate']).' '.$_SESSION['set_cur'] ?>" /></td>
 						<td>Repay Total:</td>
 						<td><input type="text" name="loan_repaytotal" disabled="disabled" value="<?PHP //echo number_format($result_loan['loan_repaytotal']).' '.$_SESSION['set_cur'] ?>"/></td>
