@@ -204,7 +204,7 @@
 						<td style="font-weight:bold;">Principal:</td>
 						<td><input type="number" class="defaultnumber" name="loan_principal" id="loan_principal" placeholder="Loan Sum in <?PHP echo $_SESSION['set_cur']; ?>" min="<?PHP echo $minlp; ?>" max="<?PHP echo $maxlp; ?>" onChange="calc_rate(<?PHP echo $_SESSION['fee_loan']; ?>)" /></td>
 						<td style="font-weight:bold;">Period:</td>
-						<td><input type="number" class="defaultnumber" name="loan_period" id="loan_period" placeholder="Number of Months" onChange="calc_rate(<?PHP echo $_SESSION['fee_loan']; ?>)" /></td>
+						<td><input type="number" class="defaultnumber" name="loan_period" id="loan_period" placeholder="Number of Weeks" onChange="calc_rate(<?PHP echo $_SESSION['fee_loan']; ?>)" /></td>
 					</tr>
 					<tr>
 						<td style="font-weight:bold;">Interest Rate:</td>
